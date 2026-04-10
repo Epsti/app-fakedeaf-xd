@@ -1,0 +1,50 @@
+@use "../../mixins";
+
+.profile {
+  width: 100%;
+  background-color: #1E1E1E;
+  padding: 50px 85px;
+  @include mixins.flex(column, start, start, nowrap);
+  gap: 30px;
+
+  &__pr-container {
+    width: 100%;
+    @include mixins.flex(column, center, center, nowrap);
+  }
+  &__profile-bg {
+    width: 100%;
+    padding: 15px 36px;
+    background-color: #353535;
+    @include mixins.flex(row, start, center, nowrap);
+    gap: 20px;
+  }
+  &__info{
+    width: 100%;
+    padding: 27px 36px;
+    background-color: #292828;
+    @include mixins.flex(row, space-between, center, nowrap);
+  }
+  &__info-when-created {
+    @include mixins.flex(row, center, center, nowrap);
+    gap: 20px;
+  }
+  &__info-logout {
+    border-radius: 30px;
+    padding: 7px 40px;
+    background-color: #000000;
+    border: 2px solid #BF0202;
+  }
+  &__info-when-was-online {
+    @include mixins.flex(row, center, center, nowrap);
+    gap: 20px;
+  }
+  &__favorites-list {
+    @include mixins.flex(row, center, center, nowrap);
+    gap: 40px;
+  }
+}
+
+.profile > h2 {
+  font-size: 24px;
+  font-weight: 700;
+}

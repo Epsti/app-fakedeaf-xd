@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <a href="/index.html">
+        <div class="header__logo">
+            <h1>SHTALIN</h1>
+            <h2>Shatlin did a good job!</h2>
+        </div>
+    </a>
+
+    <nav class="header__nav nav">
+        <form>
+            <label for="search-bar"></label>
+            <input id="search-bar" placeholder="Hinted search text"/>
+            <img src="./blocks/header/icons/icon.png">
+        </form>
+    </nav>
+
+    <div class="header__buttons buttons">
+        <button class="buttons__heart-icon"> Мой аккаунт</button>
+        <button class="buttons__button">
+            Войти
+        </button>
+    </div>
+</header>
+
+<main class="main">
+    <section class="main__modal-window">
+        <div class="main__signin">
+            <div class="main__nav-bar">
+                <div class="main__nav-btns">
+                    <button class="main__signin-button-signin">Вход</button>
+                    <button class="main__signup-button-signin">Регистрация</button>
+                </div>
+                <button class="exit-signin"><img href="" src="./blocks/main/icons/exit.png"></button>
+            </div>
+            <div class="main__forms">
+                <form class="main__formsin">
+                    <p class="main__login">
+                        <label for="email-signin">Email</label>
+                        <input id="email-signin" name="email" type="email">
+                    </p>
+                    <p class="main__login">
+                        <label for="password-signin">Пароль</label>
+                        <input id="password-signin" name="password" type="password">
+                    </p>
+                    <button class="main__pass-btn" type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+        <div class="main__signup">
+            <div class="main__nav-bar">
+                <div class="main__nav-btns">
+                    <button class="main__signin-button-signup">Вход</button>
+                    <button class="main__signup-button-signup">Регистрация</button>
+                </div>
+                <button class="exit-signup"><img href="" src="./blocks/main/icons/exit.png"></button>
+            </div>
+            <div class="main__forms">
+                <form class="main__formsup">
+                    <p class="main__login">
+                        <label for="login-signup">Логин</label>
+                        <input id="login-signup" name="login" type="text">
+                    </p>
+                    <p class="main__login">
+                        <label for="password-signup">Пароль</label>
+                        <input id="password-signup" name="password" type="password">
+                    </p>
+                    <p class="main__login">
+                        <label for="email-signup">Email</label>
+                        <input id="email-signup" name="email" type="email">
+                    </p>
+                    <button class="main__pass-btn" type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__suggestions-page suggestions-page">
+        <div class="suggestions-page__suggestions">
+            <div class="suggestions-page__abt-watch">
+                <h2>Что вас интересует?</h2>
+                <div class="suggestions-page__abt">
+                    <p><a href="#">Все фильмы</a></p>
+                    <p><a href="#">Все сериалы</a></p>
+                    <p><a href="#">Все мультфильмы</a></p>
+                    <p><a href="#">Все аниме</a></p>
+                </div>
+            </div>
+            <div class="suggestions-page__abt-watch">
+                <h2>А может жанры?</h2>
+                <div class="suggestions-page__abt2">
+
+                </div>
+            </div>
+        </div>
+        <div class="suggestions-page__movie-page movie-page">
+            <div class="movie-page__banner-info banner-info">
+                <div class="banner-info__banner">
+                    <div class="banner-info__banner-name">
+                        <div class="banner-info__banner-image">
+
+                        </div>
+                        <div class="banner-info__banner-text">
+                            <div>
+                                <h2 id="name"></h2>
+                                <h3 id="english-name"></h3>
+                                <p id="rating"></p>
+                            </div>
+                            <div>
+                                <h2 id="country-year">США, Япония, 2023 года</h2>
+                                <p id="category">фантастика, боевик, приключения</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-info__info info">
+                        <div class="info__info-2">
+                            <h2>Режиссер</h2>
+                            <p id="directors">Майрзи Алмас, Джулиан Холмс, Хироми Камата</p>
+                        </div>
+                        <div class="info__info-3">
+                            <h2>Актёры:</h2>
+                            <div>
+                                <p id="actors">Анна Саваи, Курт Рассел, Кирси Клемонс,<br>
+                                    Рэн Ватабэ, Джо Типпетт, Уайатт Рассел, <br>
+                                    Мари Ямамото, Элиза Ласовски, Мирелли <br>
+                                    Тейлор, Андерс Холм</p>
+                            </div>
+                        </div>
+                        <div class="info__info-4">
+                            <h2>Язык озвучки:</h2>
+                            <p id="voice-language">Японский, Английский</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-page__player-frame player-frame">
+                <div class="player-frame__background">
+                    <div class="player-frame__text-info">
+                        <h2>Сюжет контента</h2>
+                        <p id="description">Пережив нападение Годзиллы на Сан-Франциско, Кейт в очередной р</p>
+                        <h3 id="player-name">Сериал «Монарх»:</h3>
+                        <div class="player-frame__player">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="footer">
+    <div class="footer__futa-container">
+        <div class="footer__futa-logo">
+            <h2>SHTALIN</h2>
+            <h3>ВАШ ЛЮБИМЫЙ САЙТ</h3>
+        </div>
+        <div class="footer__links">
+            <div class="footer__links-container">
+                <p>© SHTALIN - лучший киносайт с русскими субтитрами!</p>
+                <p>Правообладателям, email:fuckemweball@gmail.com или обратная связь, пожаловаться ссылка.<br>
+                    Другие вопросы и рекламодателям:контакты</p>
+            </div>
+            <p>Если Вы заметили ошибку на сайте, просьба связаться с нами.</p>
+        </div>
+    </div>
+</footer>
+<script type="module" src="/main.js" defer></script>
+</body>
+</html>

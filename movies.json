@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Интерстеллар",
+    "section": "Фантастика",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 2,
+    "title": "Побег из Шоушенка",
+    "section": "Драма",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 3,
+    "title": "Тёмный рыцарь",
+    "section": "Боевик",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 4,
+    "title": "Начало",
+    "section": "Фантастика",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 5,
+    "title": "Криминальное чтиво",
+    "section": "Криминал",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 6,
+    "title": "Форрест Гамп",
+    "section": "Драма",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 7,
+    "title": "Матрица",
+    "section": "Фантастика",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 8,
+    "title": "Славные парни",
+    "section": "Криминал",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 9,
+    "title": "Властелин колец",
+    "section": "Фэнтези",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 10,
+    "title": "Бойцовский клуб",
+    "section": "Драма",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 11,
+    "title": "Леон",
+    "section": "Боевик",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 12,
+    "title": "Король Лев",
+    "section": "Мультфильм",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 13,
+    "title": "Гладиатор",
+    "section": "Боевик",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 14,
+    "title": "Престиж",
+    "section": "Триллер",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 15,
+    "title": "Отступники",
+    "section": "Триллер",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 16,
+    "title": "Паразиты",
+    "section": "Драма",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 17,
+    "title": "Джентльмены",
+    "section": "Криминал",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 18,
+    "title": "Зеленая миля",
+    "section": "Драма",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 19,
+    "title": "Остров проклятых",
+    "section": "Триллер",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 20,
+    "title": "1+1",
+    "section": "Комедия",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 21,
+    "title": "Джанго освобожденный",
+    "section": "Вестерн",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 22,
+    "title": "Ла-Ла Ленд",
+    "section": "Мюзикл",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 23,
+    "title": "Охотники за привидениями",
+    "section": "Комедия",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 24,
+    "title": "Шрек",
+    "section": "Мультфильм",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  },
+  {
+    "id": 25,
+    "title": "Аватар",
+    "section": "Фантастика",
+    "image": "./blocks/main/images/invicible%20movie%20image.png"
+  }
+]

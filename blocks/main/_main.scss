@@ -1,0 +1,287 @@
+@use "../../mixins";
+
+
+.main {
+  width: 100%;
+  @include mixins.flex(column, start, start, nowrap);
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  &__modal-window {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &__modal-window.open {
+    display: flex !important;
+  }
+  &__signin {
+    display: none;
+    flex-direction: column;
+    padding: 34px 25px;
+    background-color: #000000;
+    gap: 11px;
+    border-radius: 10px;
+    border: solid 2px #5F5F5F;
+    align-items: center;
+    justify-content: center;
+  }
+  &__signin.open {
+    display: flex !important;
+  }
+  &__nav-bar {
+    width: 100%;
+    @include mixins.flex(row, space-between, start, nowrap);
+    gap: 66px;
+  }
+  &__nav-btns {
+    @include mixins.flex(row, start, start, nowrap);
+    gap: 21px;
+  }
+  &__forms {
+    @include mixins.flex(column, center, center, nowrap);
+    padding: 10px;
+    background-color: #222121;
+    border-radius: 10px;
+    gap: 25px;
+  }
+  &__formsin {
+    @include mixins.flex(column, center, start, nowrap);
+    gap: 16px;
+  }
+  &__formsup {
+    @include mixins.flex(column, center, start, nowrap);
+    gap: 16px;
+  }
+  &__login {
+    @include mixins.flex(column, center, start, nowrap);
+    gap: 4px;
+  }
+  &__login > input{
+    background-color: #3F3D3D;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: solid 1px #5F5F5F;
+  }
+  &__pass-btn {
+    width: 100%;
+    background-color: #5F5F5F;
+    padding: 8px 0;
+    border-radius: 5px;
+  }
+
+  &__signup {
+    display: none;
+    flex-direction: column;
+    padding: 34px 25px;
+    background-color: #000000;
+    gap: 11px;
+    border-radius: 10px;
+    border: solid 2px #5F5F5F;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  &__signup.open {
+    display: flex !important;
+  }
+
+  &__films {
+    width: 100%;
+    @include mixins.flex(row, start, center, nowrap);
+    padding: 26px 22px;
+    background-color: #252525;
+    gap: 33px;
+  }
+  &__suggestions-page {
+    width: 100%;
+    @include mixins.flex(row, start, stretch, nowrap);
+  }
+}
+
+.films {
+  &__films-slider {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 30px;
+  }
+  &__title-container {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 28px;
+  }
+  &__title-container > h2 {
+    width: 195px;
+    font-size: 32px;
+  }
+  &__title-container > p {
+    width: 195px;
+    font-size: 16px;
+  }
+}
+
+.films-slider {
+  &__films-group {
+    @include mixins.flex(row, start, center, nowrap);
+    gap: 30px;
+    animation: spin 60s infinite linear;
+  }
+}
+
+.films-group {
+  &__film-card {
+    width: 138px;
+    height: 207px;
+  }
+  &__film-card > a > img {
+    width: 138px;
+    height: 207px;
+  }
+  &__film-card > a > img:hover {
+    transform: scale(0.95);
+    transition: transform 0.5s ease;
+    border: 1px solid gold;
+  }
+}
+
+.suggestions-page {
+  &__suggestions {
+    width: 200px;
+    height: auto;
+    background-color: #0C0C0C;
+    @include mixins.flex(column, start, start, nowrap);
+    padding: 20px 28px;
+    gap: 30px;
+  }
+  &__abt-watch {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 12px;
+  }
+  &__abt-watch > h2 {
+    font-size: 20px;
+  }
+  &__abt {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 5px;
+  }
+  &__abt > p > a {
+    color: #ADADAD;
+    font-size: 14px;
+  }
+  &__abt-watch2 {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 12px;
+  }
+  &__abt-watch2 > h2 {
+    font-size: 20px;
+  }
+  &__abt2 {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 5px;
+  }
+  &__abt2 > p > a {
+    color: #ADADAD;
+    font-size: 14px;
+  }
+  &__films-page {
+    width: 100%;
+    @include mixins.flex(column, start, center, wrap);
+    background-color: #161616;
+    padding: 36px 49px;
+    gap: 30px;
+  }
+  &__genre-item {
+    font-size: 14px;
+    color: #ADADAD;
+  }
+}
+
+.films-page {
+  &__filters {
+    width: 100%;
+    @include mixins.flex(row, center, start, wrap);
+    gap: 74px;
+  }
+  &__grid-cont {
+    @include mixins.flex(row, start, start, wrap);
+    gap: 30px;
+  }
+  &__grid-cont > select {
+    width: 200px;
+    background-color: #353535;
+    padding: 9px 5px;
+    border-radius: 5px;
+  }
+  &__recently-films {
+    font-size: 26px;
+  }
+  &__films-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 138px);
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 50px;
+  }
+  &__film-card-cont {
+    @include mixins.flex(column, center, start, nowrap);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    gap: 10px;
+  }
+  &__film-image > a > img {
+    width: 138px;
+    height: 207px;
+  }
+  &__film-image:hover {
+    transform: scale(0.9);
+    transition: transform 0.8s ease;
+    border: 1px solid gold;
+  }
+  &__card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+  }
+  &__card-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__pagination {
+    @include mixins.flex(row, start, center, nowrap);
+    gap: 15px;
+  }
+  &__pagination-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #BF0202;
+    border-radius: 30px;
+    transform: scale(0.9);
+  }
+  &__pagination-btn.active {
+    transform: scale(1.1);
+  }
+
+}
+
+
+
+
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -40%;}
+}

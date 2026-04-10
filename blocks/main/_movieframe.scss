@@ -1,0 +1,153 @@
+@use "../../mixins";
+
+.movie-page {
+  width: 100%;
+  @include mixins.flex(column, start, center, nowrap);
+  gap: 20px;
+  background-color: #0C0C0C;
+  &__banner-info {
+    @include mixins.flex(column, start, center, nowrap);
+    width: 100%;
+    padding: 60px;
+    background-color: #161616;
+  }
+  &__player-frame {
+    @include mixins.flex(column, start, center, nowrap);
+    width: 100%;
+    padding: 60px;
+    background-color: #161616;
+  }
+}
+
+.banner-info {
+  &__banner {
+    @include mixins.flex(row, center, start, nowrap);
+    gap: 136px;
+  }
+  &__banner-name {
+    @include mixins.flex(row, center, start, nowrap);
+    gap: 21px;
+  }
+  &__banner-text {
+    @include mixins.flex(column, start, start, wrap);
+    gap: 30px;
+  }
+  &__banner-text > div:first-child {
+    @include mixins.flex(column, start, start, wrap);
+    gap: 10px;
+  }
+  &__banner-text > div:first-child > h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+  &__banner-text > div:first-child > h3 {
+    color: #8F8F8F;
+    font-size: 16px;
+  }
+  &__banner-text > div:first-child > p {
+    color: #8F8F8F;
+    font-size: 14px;
+  }
+  &__banner-text > div:last-child {
+    @include mixins.flex(column, start, start, wrap);
+    gap: 10px;
+  }
+  &__banner-text > div:last-child > h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+  &__banner-text > div:last-child > p {
+    color: #8F8F8F;
+    font-size: 14px;
+  }
+  &__info {
+    @include mixins.flex(column, start, start, wrap);
+    gap: 15px;
+  }
+  &__image {
+    width: 180px;
+    height: 250px;
+  }
+}
+
+.info {
+  &__info-1 {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 10px;
+  }
+  &__info-1 > h2 {
+    color: #FFFFFF;
+  }
+  &__info-1 > p {
+    color: #8F8F8F;
+    font-size: 14px;
+  }
+  &__info-2 {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 10px;
+  }
+  &__info-2 > h2 {
+    color: #FFFFFF;
+  }
+  &__info-2 > p {
+    color: #8F8F8F;
+    font-size: 14px;
+  }
+  &__info-3 {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 10px;
+  }
+  &__info-3 > h2 {
+    color: #FFFFFF;
+  }
+  &__info-3 > div {
+    width: 267px;
+  }
+  &__info-3 > div > p {
+    color: #8F8F8F;
+    font-size: 14px;
+  }
+
+  &__info-4 {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 10px;
+  }
+  &__info-4 > h2 {
+    color: #FFFFFF;
+  }
+  &__info-4 > p {
+    color: #8F8F8F;
+    font-size: 14px;
+  }
+}
+
+.player-frame {
+  &__background {
+    @include mixins.flex(column, center, start, nowrap);
+    gap: 30px;
+  }
+  &__text-info {
+    @include mixins.flex(column, start, center, nowrap);
+    gap: 17px;
+  }
+  &__text-info > h2 {
+    font-size: 22px;
+  }
+  &__text-info > h3 {
+    font-size: 18px;
+  }
+  &__player {
+    width: 850px;
+    background-color: #fff;
+    height: 550px;
+  }
+  &__iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#description {
+  text-align: justify;
+  font-size: 14px;
+}

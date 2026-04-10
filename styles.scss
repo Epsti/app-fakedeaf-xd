@@ -1,0 +1,13 @@
+@use 'normalize';
+@use 'mixins';
+@use 'variables';
+@use 'globals';
+
+@import
+"blocks/header/header",
+"blocks/main/main",
+"blocks/footer/footer",
+"blocks/main/movieframe",
+"blocks/main/profile";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');

@@ -1,0 +1,59 @@
+@use "../../mixins";
+
+.header {
+  width: 100%;
+  padding: 21px 20px;
+  @include mixins.flex(row, space-between, center, nowrap);
+  border: 2px solid #BF0202;
+  border-top: none;
+  background-color: #000000;
+  &__logo {
+    @include mixins.flex(column, start, start, nowrap);
+  }
+  &__logo > h1 {
+    font-size: 22px;color: #BF0202;font-weight: 700;
+  }
+  &__nav {
+    width: 400px;
+    @include mixins.flex(row, start, center, nowrap);
+  }
+  &__nav > form {
+    width: 400px;
+    background-color: white;
+    padding: 8px 24px;
+    border-radius: 30px;
+    @include mixins.flex(row, space-between, start, nowrap);
+  }
+  &__nav > form > input{
+    width: 100%;
+    color: #000000;
+  }
+  &__nav > form > label{
+    display: none;
+  }
+  &__buttons {
+    @include mixins.flex(row, start, center, nowrap);
+  }
+}
+
+.nav {
+
+}
+
+.buttons {
+
+  &__heart-icon {
+    border: 2px solid #BF0202;
+    border-radius: 6px;
+    padding: 0 24px 0 24px;
+    height: 34px;
+    display: none;
+    align-items: center;
+  }
+  &__button {
+    border: 2px solid #BF0202;
+    border-radius: 6px;
+    padding: 0 24px 0 24px;
+    height: 34px;
+  }
+}

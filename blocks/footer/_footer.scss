@@ -1,0 +1,38 @@
+@use "../../mixins";
+
+.footer {
+  background-color: #000000;
+  padding: 41px 20px;
+  border: 2px solid #BF0202;
+  border-bottom: none;
+  &__futa-container {
+    @include  mixins.flex(row, start, center, nowrap);
+    gap: 57px;
+  }
+  &__futa-logo {
+    @include mixins.flex(column, start, start, nowrap);
+  }
+  &__futa-logo > h2{
+    color: #BF0202;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  &__futa-logo > h3{
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+  &__links {
+    @include mixins.flex(column, center, start, nowrap);
+    gap: 25px;
+  }
+  &__links-container {
+    @include mixins.flex(column, start, start, nowrap);
+    gap: 5px;
+  }
+  &__links-container > p {
+    color: #C2C2C2;
+  }
+  &__links > p {
+    color: #C2C2C2;
+  }
+}
