@@ -4,8 +4,6 @@ WORKDIR /app
 
 # Копируем файлы зависимостей
 COPY package*.json ./
-
-# Устанавливаем зависимости
 RUN npm install
 
 # Копируем остальные файлы и собираем проект
@@ -14,6 +12,8 @@ RUN npm run build
 
 # ЭТАП 2: Раздача статики через Nginx
 FROM nginx:stable-alpine as production-stage
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Копируем билд из предыдущего этапа в папку Nginx
 COPY --from=build-stage /app/dist /usr/share/nginx/html
