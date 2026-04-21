@@ -12,7 +12,7 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': {
-                target: 'http://89.109.16.50:7002',
+                target: 'https://app.epsti.site/',
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, '')
             }
