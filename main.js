@@ -1,4 +1,5 @@
 import './styles.scss'
+import heart from "./blocks/header/icons/Heart.png"
 
 function checkAuth() {
     const rawData = localStorage.getItem('user');
@@ -446,7 +447,7 @@ function displayMovies(moviesToDisplay) {
             <div class="films-page__card-section">
                 <h3 style="font-size: 14px; color: #808080;">${movie.category}</h3>
                 <button class="add-favorite" data-id="${movie.id}">
-                    <img style="width: 20px; height: 20px;" src="./blocks/header/icons/Heart.png">
+                    <img style="width: 20px; height: 20px;" src="${heart}">
                 </button>
             </div>
         </div>`;
