@@ -2,13 +2,22 @@ import { defineConfig } from 'vite'
 import path from 'path'
 
 export default defineConfig({
-    // Твои существующие алиасы
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src')
         }
     },
-    // Добавляем блок сервера с прокси
+    build: {
+        rollupOptions: {
+            input: {
+                main: path.resolve(__dirname, 'index.html'),
+                profile: path.resolve(__dirname, 'profile.html'),
+                favorites: path.resolve(__dirname, 'favorites.html'),
+                movieframe: path.resolve(__dirname, 'movieframe.html'),
+                test: path.resolve(__dirname, 'test.html'),
+            }
+        }
+    },
     server: {
         proxy: {
             '/api': {
